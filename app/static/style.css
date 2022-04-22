@@ -3,6 +3,7 @@ body {
 }
 
 header{
+    font-size:20pt;
     backgroung-color:#FF8000;
     text-align:center;
     text-color:#FFFFFF;
@@ -49,18 +50,18 @@ button.choose-file-button {
     width: 200px;
     height: 40px;
     border-radius: 2px;
-    background-color: #ffffff;
-    border: solid 1px #7052CB;
+    background-color: #FFFF93;
+    border: solid 1px #FFFF6F;
     font-size: 13px;
-    color: #7052CB;
+    color: #FFFFFF;
 }
 
 button.analyze-button {
     width: 200px;
     height: 40px;
-    border: solid 1px #7052CB;
+    border: dashed 1px 	#FFBB77;
     border-radius: 2px;
-    background-color: #7052CB;
+    background-color: #FFC78E;
     font-size: 13px;
     color: #ffffff;
 }
