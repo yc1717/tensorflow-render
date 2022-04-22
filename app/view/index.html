@@ -7,16 +7,19 @@
 <body>
 <div>
   <div class='center'>
-    <div class='title'>Classify Fruit Images</div>
+    <div class='title'>
+      <h1>Classify Fruit Images</h1>
     <p>
-    <ul>Use images of
-      <li><strong>金桔</strong></li>
-       <li><strong>檸檬</strong></li> 
-      <li><strong>葡萄柚</strong></li>
-       <li><strong>柑</strong></li>
-       <li><strong>柳丁</strong></li>
-    </ul>   
+      <ol><strong>Use images of</strong>
+      <li><em><strong>金桔</strong></em></li>
+       <li><em><strong>檸檬</strong></em></li> 
+      <li><em><strong>葡萄柚</strong></em></li>
+       <li><em><strong>柑</strong></em></li>
+       <li><em><strong>柳丁</strong></em></li>
+    </ol>   
     </p>
+  </div>
+  <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
     <div class='content'>
       <div class='no-display'>
         <input id='file-input'
@@ -26,12 +29,11 @@
                accept='image/*'
                onchange='showPicked(this)'>
       </div>
-      <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
       <div class='upload-label'>
         <label id='upload-label'>No file chosen</label>
       </div>
       <div>
-        <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
+        <img id='image-picked'  class='no-display' alt='Chosen Image' height='200'>
       </div>
       <div class='analyze'>
         <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
