@@ -5,9 +5,11 @@
   <script src='../static/client.js'></script>
 </head>
 <body>
-<div>
-  <div class='center' style="background-color:#FFB01C;">
+  <header><div class="topic">Classify Fruit Images</div></header>
+  <div class='center'><!--圖層置中-->
   Classify Fruit Images
+    <div class="left">
+    <!--水果列表-->
     <div class='title'>
       <p>
       <strong>Use images of</strong><br/>
@@ -18,8 +20,14 @@
        <em><strong>柳丁</strong></em>
       </p>
      </div>
+     <!--水果列表-->
+    <!--選圖按鈕-->
   <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
-    <div class='content'>
+    <!--選圖按鈕-->
+    </div>
+    <div class="right">
+     <div class='content'>
+      <!--圖片顯示-->
         <div class='no-display'>
           <input id='file-input'
                  class='no-display'
@@ -31,17 +39,22 @@
         <div class='upload-label'>
           <label id='upload-label'>No file chosen</label>
         </div>
+      <!--圖片顯示-->
         <div>
           <img id='image-picked'  class='no-display' alt='Chosen Image' height='200'>
         </div>
+      <!--分析按鈕-->
         <div class='analyze'>
           <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
         </div>
+       <!--分析按鈕-->
+      <!--結果顯示-->
         <div class='result-label'>
           <label id='result-label'></label>
         </div>
+       <!--結果顯示-->
+      </div>
     </div>
   </div>
-</div>
 </body>
 </html>
