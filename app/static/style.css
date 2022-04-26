@@ -7,10 +7,10 @@ body {
 }
 .topic{
     text-align:center;
-    backgroud-color:#F4A460
+    color:	#00808C;
+    font-size:30px;
+    backgroud-color:#FFFF99;
 }
-        
-    
 .left{
     text-align:center;
     float:left;
@@ -18,14 +18,16 @@ body {
 }
 
  .right{
-     font-size:20px;
+    font-size:20px;
     text-align:center;
     float:right;
 }
 .center {
+    　text-align:center;
     background-color:#B0C4DE;
     margin: auto;
     padding: 10px 50px;
+    
 }
 
 .title {
@@ -59,7 +61,7 @@ button.choose-file-button {
     width: 200px;
     height: 40px;
     border-radius: 2px;
-    background-color: 	#FFFF99 ;
+    background-color:#FFFF4D;
     border: solid 1px;
     font-size: 13px;
     color: #FFFFFF;
