@@ -12,11 +12,10 @@ body {
     backgroud-color:#FFFF99;
 }
 .center {
-    　text-align:center;
+    text-align:center;
     background-color:#B0C4DE;
     margin: auto;
     padding: 10px 50px;
-    height:1200px;
 }
 
 .title {
