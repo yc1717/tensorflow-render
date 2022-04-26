@@ -29,14 +29,12 @@ body {
 }
 .left{
     text-align:center;
-     margin-left:350px;
     float:left;
     font-size:20px;
      height:800px;
 }
 
  .right{
-      margin-right:350px;
     font-size:20px;
     text-align:center;
     float:right;
