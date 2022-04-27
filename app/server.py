@@ -100,6 +100,7 @@ async def analyze(request):
     elif prediction==3:
          result:'柑'
     else:
+        result:'柳丁'
     return JSONResponse({'result': str(prediction)})
 
 
