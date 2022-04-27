@@ -1,6 +1,7 @@
 import aiohttp
 import asyncio
 import uvicorn
+import sys
 from fastai import *
 from fastai.vision import *
 import tensorflow as tf
@@ -68,6 +69,7 @@ loop.close()
 @app.route('/')
 async def homepage(request):
     html_file = path / 'view' / 'index.html'
+    print(html_file)
     return HTMLResponse(html_file.open().read())
 
 
@@ -89,17 +91,8 @@ async def analyze(request):
     img = preprocess_input( np.array([img]) )
     predictions = learn.predict(img)  
     prediction = predictions.argmax()
-    if prediction==0:
-        result:'金桔'
-    elif prediction==1:
-         result:'檸檬'
-    elif prediction==2:
-        result:'葡萄柚'
-    elif prediction==3:
-         result:'柑'
-    else:
-         result:'柳丁'
-    return JSONResponse({'result':str(result)})
+    return JSONResponse({'result': str(prediction)})
+
 
 if __name__ == '__main__':
     if 'serve' in sys.argv:
