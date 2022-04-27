@@ -50,6 +50,8 @@ body {
 }
 
 .result-label {
+    font-style:bold;
+    color:	#B8860B;
     margin-top: 0.5em;
     padding: 10px;
     font-size: 13px;
