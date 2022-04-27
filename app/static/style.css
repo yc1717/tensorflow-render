@@ -6,8 +6,6 @@ body {
     display: none;
 }
 .topic{
-   
-    width: 200px;
     text-align:center;
     color:	#00808C;
     font-size:30px;
@@ -64,7 +62,7 @@ button.choose-file-button {
     width: 200px;
     height: 40px;
     border-radius: 2px;
-    background-color:#FFD700;
+    background-color:#E6D933;
     border: solid 1px;
     font-size: 13px;
     color: #FFFFFF;
