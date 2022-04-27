@@ -92,15 +92,15 @@ async def analyze(request):
     predictions = learn.predict(img)  
     prediction = predictions.argmax()
     if prediction==0:
-        result:'金桔'
+        result='金桔'
     elif prediction==1:
-         result:'檸檬'
+         result='檸檬'
     elif prediction==2:
-        result:'葡萄柚'
+        result='葡萄柚'
     elif prediction==3:
-         result:'柑'
+         result='柑'
     else:
-        result:'柳丁'
+        result='柳丁'
     return JSONResponse({'result': str(result)})
 
 
