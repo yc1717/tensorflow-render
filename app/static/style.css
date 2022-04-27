@@ -45,7 +45,8 @@ body {
 }
 
 .upload-label {
-     margin-top: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
     padding: 10px;
     font-size: 15px;
     color:#D10000;
